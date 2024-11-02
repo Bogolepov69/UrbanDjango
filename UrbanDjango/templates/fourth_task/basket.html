@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Корзина</title>
+</head>
+{% extends 'menu.html' %}
+
+{% block pagename %}Корзина{% endblock %}
+
+{% block content %}
+<h1>Ваша корзина</h1>
+<!-- Здесь будет отображаться содержимое корзины -->
+{% endblock %}
+<H2>
+    В вашей корзине пока нет товаров
+</H2>
+<a href="/main"><button>Вернуться</button></a><br>
+<a href="/shop">Магазин</a><br>
+</body>

@@ -7,7 +7,7 @@ def main(request):
     context = {
         'title': title
     }
-    return render(request,'fourth_task/main.html', context)
+    return render(request,'main.html', context)
 
 
 def shop(request):
@@ -17,11 +17,9 @@ def shop(request):
     product3 = 'Шерстяной плед'
     context = {
         'title': title,
-        'product1': product1,
-        'product2': product2,
-        'product3': product3,
+        'products': [product1, product2, product3],
     }
-    return render(request, 'fourth_task/shop.html', context)
+    return render(request, 'shop/shop.html', context)
 
 
 def basket(request):
@@ -29,4 +27,4 @@ def basket(request):
     context = {
         'title': title
     }
-    return render(request, 'fourth_task/basket.html', context)
+    return render(request,'basket.html', context)
